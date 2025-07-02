@@ -1,50 +1,6 @@
-"use client";
-
 import Head from "next/head";
 
 export default function Home() {
-
-  interface FormValues {
-    name: string;
-    email: string;
-    phone?: string;
-    subject: string;
-    message: string;
-  }
-
-  interface ApiResponse {
-    message: string;
-    error?: string;
-  }
-
-  const onFinish = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    const formData = new FormData(event.currentTarget);
-    const values: FormValues = {
-      name: formData.get("nome") as string,
-      email: formData.get("email") as string,
-      phone: formData.get("telefone") as string || undefined,
-      subject: formData.get("assunto") as string,
-      message: formData.get("mensagem") as string,
-    };
-
-    try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(values),
-      });
-
-      const data: ApiResponse = await response.json();
-    } catch (error: any) {
-      console.error('Erro ao enviar e-mail:', error.message);
-      return new Response(JSON.stringify({ error: `Erro ao enviar e-mail: ${error.message}` }));
-    }
-  };
-
   return (
     <>
       <Head>
@@ -239,7 +195,7 @@ export default function Home() {
               </a>
             </p>
           </div>
-          <form className="space-y-6" onSubmit={onFinish}>
+          <form className="space-y-6">
             <div className="md:flex md:gap-6 space-y-6 md:space-y-0">
               <div className="flex-1 flex flex-col gap-1">
                 <label htmlFor="nome" className="text-sm text-[#B2DFDB]">
