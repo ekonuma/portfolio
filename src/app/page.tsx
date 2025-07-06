@@ -20,14 +20,9 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-4 mt-24">
             Olá, sou <span className="text-[#26A69A]">Eike</span>
           </h2>
-          <p className="text-xxl max-w-3xl text-[#B2DFDB]">
-            Sou um Analista desevolvedor backend Java, Desde minha infância
-            tenho um grande interesse por tecnologia e gadgets, e esse
-            entusiasmo em explorar as ferramentas e inovações continua a
-            impulsionar meu trabalho. Estou animado para aproveitar minha
-            bagagem de conhecimento diverso para criar soluções inovadoras e
-            contribuir com novos projetos.
-          </p>
+          <p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto px-4 text-[#B2DFDB] leading-relaxed text-center">
+            Sou um Analista desenvolvedor backend Java. Desde minha infância tenho um grande interesse por tecnologia e gadgets, e esse entusiasmo em explorar as ferramentas e inovações continua a impulsionar meu trabalho. Estou animado para aproveitar minha bagagem de conhecimento diverso para criar soluções inovadoras e contribuir com novos projetos.
+        </p>
         </section>
 
         <section className="container mx-auto py-16 px-4" id="projetos">
@@ -75,65 +70,21 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="container mx-auto py-16 px-4" id="skills">
-          <h3 className="text-3xl font-bold mb-8 text-[#26A69A]">Skills</h3>
-          <div className="flex flex-wrap gap-6 text-lg">
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Java
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 px-18">
+          {[
+            'Java', 'Spring', 'Golang', 'Javascript', 'Typescript', 'React', 'NextJS',
+            'Azure', 'AWS', 'AzureDevOps', 'Github', 'Gitlab', 'Docker', 'Kubernetes',
+            'Linux', 'Shell', 'Android', 'Kotlin',
+          ].map((skill) => (
+            <span
+              key={skill}
+              className="bg-[#263230] text-[#E0F2F1] px-6 py-2 rounded-md text-sm font-medium w-full text-center whitespace-nowrap flex items-center justify-center min-h-[44px]"
+            >
+              {skill}
             </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Spring
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Golang
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Javascript
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Typescript
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              React
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              NextJS
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Azure
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              AWS
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              AzureDevOps
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Github
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Gitlab
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Docker
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Kubernetes
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Linux
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Shell
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Android
-            </span>
-            <span className="bg-[#263230] px-4 py-2 rounded text-[#E0F2F1]">
-              Kotlin
-            </span>
-          </div>
-        </section>
+          ))}
+        </div>
+        
         <section className="container mx-auto py-20 px-4" id="contato">
           <h3 className="text-3xl font-bold mb-12 text-[#26A69A]">Contato</h3>
 
