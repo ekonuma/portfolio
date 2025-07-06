@@ -28,7 +28,7 @@ export default async function BlogPost({params}: {params: Promise<{ slug: string
   return (
     <main className="bg-[#0A0F0F] text-[#E0F2F1] min-h-screen py-32 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl font-bold text-[#26A69A] mb-8">{title}</h1>
+        <h1 className="text-3xl font-bold text-[#26A69A] mb-8 text-center">{title}</h1>
         <NotionContent blocks={blocks} />
       </div>
     </main>

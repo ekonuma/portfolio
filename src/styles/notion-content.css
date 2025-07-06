@@ -1,0 +1,74 @@
+.notion-content {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #1a1b1b;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif;
+  color: #c3c4c4;
+  line-height: 1.75;
+}
+
+
+.notion-content h1 {
+  font-size: 1.5rem;       /* Antes: 2.5rem */
+  font-weight: 700;
+  color: #26A69A;
+  margin-bottom: 1.25rem;
+}
+
+.notion-content h2 {
+  font-size: 1.25rem;    /* Antes: 2rem */
+  font-weight: 600;
+  color: #26A69A;
+  margin-bottom: 1rem;
+}
+
+.notion-content h3 {
+  font-size: 1rem;    /* Antes: 1.5rem */
+  font-weight: 500;
+  color: #26A69A;
+  margin-bottom: 0.75rem;
+}
+
+/* Parágrafos */
+.notion-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Listas */
+.notion-content ul,
+.notion-content ol {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.notion-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Código */
+.notion-content code {
+  background-color: #f3f4f6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  font-family: monospace;
+  color: #111827;
+}
+
+.notion-content pre {
+  background-color: #1f2937;
+  color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+.notion-content a {
+  color: #2563eb;
+  text-decoration: underline;
+}
