@@ -1,6 +1,6 @@
-type Block = any;
+import { NotionBlock } from "@/app/blog/[slug]/page";
 
-export default function NotionBlocks({ blocks }: { blocks: Block[] }) {
+export default function NotionContent({ blocks }: { blocks: NotionBlock[] }) {
   return (
     <div>
       {blocks.map((block) => {
@@ -8,26 +8,34 @@ export default function NotionBlocks({ blocks }: { blocks: Block[] }) {
           case "paragraph":
             return (
               <p key={block.id}>
-                {block.paragraph.rich_text.map((text: any) => text.plain_text).join("")}
+                {"paragraph" in block
+                  ? block.paragraph.rich_text.map((text) => text.plain_text).join("")
+                  : ""}
               </p>
             );
           case "heading_1":
             return (
               <h1 key={block.id}>
-                {block.heading_1.rich_text.map((text: any) => text.plain_text).join("")}
+                {"heading_1" in block
+                  ? block.heading_1.rich_text.map((text) => text.plain_text).join("")
+                  : ""}
               </h1>
             );
           case "heading_2":
             return (
               <h2 key={block.id}>
-                {block.heading_2.rich_text.map((text: any) => text.plain_text).join("")}
+                {"heading_2" in block
+                  ? block.heading_2.rich_text.map((text) => text.plain_text).join("")
+                  : ""}
               </h2>
             );
           case "bulleted_list_item":
             return (
               <ul key={block.id}>
                 <li>
-                  {block.bulleted_list_item.rich_text.map((text: any) => text.plain_text).join("")}
+                  {"bulleted_list_item" in block
+                    ? block.bulleted_list_item.rich_text.map((text) => text.plain_text).join("")
+                    : ""}
                 </li>
               </ul>
             );
@@ -35,7 +43,9 @@ export default function NotionBlocks({ blocks }: { blocks: Block[] }) {
             return (
               <ol key={block.id}>
                 <li>
-                  {block.numbered_list_item.rich_text.map((text: any) => text.plain_text).join("")}
+                  {"numbered_list_item" in block
+                    ? block.numbered_list_item.rich_text.map((text) => text.plain_text).join("")
+                    : ""}
                 </li>
               </ol>
             );

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -44,9 +45,9 @@ export default function Home() {
                OGZ é um programa desktop especialmente criado para facilitar a organização do estoque de materiais utilizados pelo grupo Omega de robótica da Facens (Faculdade de Engenharia de Sorocaba).
               </p>
               <div className="flex gap-4 text-sm">
-                <a href="https://github.com/Omeganizer" className="text-[#26A69A] underline">
+                <Link href="https://github.com/Omeganizer" className="text-[#26A69A] underline">
                   GitHub
-                </a>
+                </Link>
               </div>
             </div>
             <div className="bg-[#1E1E1E] p-6 rounded-xl shadow hover:scale-105 transition">
@@ -55,9 +56,9 @@ export default function Home() {
                Smartcash é um aplicativo de controle financeiro e e controle de vendas para Android.
               </p>
               <div className="flex gap-4 text-sm">
-                <a href="https://github.com/JEAM-Team" className="text-[#26A69A] underline">
+                <Link href="https://github.com/JEAM-Team" className="text-[#26A69A] underline">
                   GitHub
-                </a>
+                </Link>
               </div>
             </div>
             <div className="bg-[#1E1E1E] p-6 rounded-xl shadow hover:scale-105 transition">
@@ -66,9 +67,9 @@ export default function Home() {
                ORP ou Organizador Rápido de Pedidos é um aplicativo Android que permite a rápida comunicação entre o pedido em um restaurante e seu processamento na cozinha.
               </p>
               <div className="flex gap-4 text-sm">
-                <a href="https://github.com/ekonuma/ORP-Organizador-Rapido-de-Pedidos" className="text-[#26A69A] underline">
+                <Link href="https://github.com/ekonuma/ORP-Organizador-Rapido-de-Pedidos" className="text-[#26A69A] underline">
                   GitHub
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -139,32 +140,32 @@ export default function Home() {
           <div className="mb-12 space-y-3 text-lg text-[#B2DFDB]">
             <p>
               <strong>Email:</strong>{" "}
-              <a
+              <Link
                 href="mailto:ekonuma12@gmail.com"
                 className="text-[#26A69A] hover:underline"
               >
                 ekonuma12@gmail.com
-              </a>
+              </Link>
             </p>
             <p>
               <strong>Telefone:</strong>{" "}
-              <a
+              <Link
                 href="tel:+5515997929891"
                 className="text-[#26A69A] hover:underline"
               >
                 (15) 99792-9891
-              </a>
+              </Link>
             </p>
             <p>
               <strong>LinkedIn:</strong>{" "}
-              <a
+              <Link
                 href="https://www.linkedin.com/in/ekonuma/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#26A69A] hover:underline"
               >
                 ekonuma
-              </a>
+              </Link>
             </p>
           </div>
           <form className="space-y-6">
