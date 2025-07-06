@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "prismjs/themes/prism-tomorrow.css";
 
 :root {
   --background: #ffffff;
@@ -23,4 +24,13 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.notion-page h1, h2, h3 {
+  color: #26A69A;
+  margin-top: 2rem;
+}
+.notion-page p {
+  color: #E0F2F1;
+  margin-bottom: 1rem;
 }

@@ -12,34 +12,6 @@ export default function Home() {
       </Head>
 
       <main className="bg-[#0A0F0F] text-[#E0F2F1] min-h-screen">
-        <header className="fixed top-0 w-full bg-[#1E1E1E]/80 backdrop-blur z-50 shadow-md">
-          <nav className="container mx-auto flex justify-between items-center p-4">
-            <h1 className="text-xl font-bold">Eike Konuma</h1>
-            <ul className="flex gap-4 text-sm">
-              <li>
-                <a href="#sobre" className="hover:text-[#1DE9B6]">
-                  Sobre
-                </a>
-              </li>
-              <li>
-                <a href="#projetos" className="hover:text-[#1DE9B6]">
-                  Projetos
-                </a>
-              </li>
-              <li>
-                <a href="#skills" className="hover:text-[#1DE9B6]">
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a href="#contato" className="hover:text-[#1DE9B6]">
-                  Contato
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-
         <section
           className="flex flex-col justify-center items-center text-center h-screen"
           id="hero"
