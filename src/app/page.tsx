@@ -1,3 +1,4 @@
+import ContatoForm from "@/components/ContactForm";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -119,80 +120,7 @@ export default function Home() {
               </Link>
             </p>
           </div>
-          <form className="space-y-6">
-            <div className="md:flex md:gap-6 space-y-6 md:space-y-0">
-              <div className="flex-1 flex flex-col gap-1">
-                <label htmlFor="nome" className="text-sm text-[#B2DFDB]">
-                  Nome *
-                </label>
-                <input
-                  type="text"
-                  id="nome"
-                  name="nome"
-                  required
-                  className="bg-[#1E1E1E] text-[#E0F2F1] px-4 py-2 rounded border border-[#263230] focus:outline-none focus:ring-2 focus:ring-[#26A69A]"
-                />
-              </div>
-
-              <div className="flex-1 flex flex-col gap-1">
-                <label htmlFor="email" className="text-sm text-[#B2DFDB]">
-                  Email *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="bg-[#1E1E1E] text-[#E0F2F1] px-4 py-2 rounded border border-[#263230] focus:outline-none focus:ring-2 focus:ring-[#26A69A]"
-                />
-              </div>
-
-              <div className="flex-1 flex flex-col gap-1">
-                <label htmlFor="telefone" className="text-sm text-[#B2DFDB]">
-                  Telefone
-                </label>
-                <input
-                  type="tel"
-                  id="telefone"
-                  name="telefone"
-                  className="bg-[#1E1E1E] text-[#E0F2F1] px-4 py-2 rounded border border-[#263230]"
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-1">
-              <label htmlFor="assunto" className="text-sm text-[#B2DFDB]">
-                Assunto *
-              </label>
-              <input
-                type="text"
-                id="assunto"
-                name="assunto"
-                required
-                className="bg-[#1E1E1E] text-[#E0F2F1] px-4 py-2 rounded border border-[#263230] focus:outline-none focus:ring-2 focus:ring-[#26A69A]"
-              />
-            </div>
-
-            <div className="flex flex-col gap-1">
-              <label htmlFor="mensagem" className="text-sm text-[#B2DFDB]">
-                Mensagem *
-              </label>
-              <textarea
-                id="mensagem"
-                name="mensagem"
-                rows={5}
-                required
-                className="bg-[#1E1E1E] text-[#E0F2F1] px-4 py-2 rounded border border-[#263230] focus:outline-none focus:ring-2 focus:ring-[#26A69A]"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              className="bg-[#26A69A] text-[#0A0F0F] font-semibold px-6 py-3 rounded hover:bg-[#1DE9B6] transition"
-            >
-              Enviar Mensagem
-            </button>
-          </form>
+          <ContatoForm />
         </section>
         <footer className="bg-[#1E1E1E] text-[#80CBC4] text-center py-4">
           &copy; {new Date().getFullYear()} ekonuma. Todos os direitos
