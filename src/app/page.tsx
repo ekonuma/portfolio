@@ -22,7 +22,8 @@ export default function Home() {
             Olá, sou <span className="text-[#26A69A]">Eike</span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto px-4 text-[#B2DFDB] leading-relaxed text-center">
-            Sou um Analista desenvolvedor backend Java. Desde minha infância tenho um grande interesse por tecnologia e gadgets, e esse entusiasmo em explorar as ferramentas e inovações continua a impulsionar meu trabalho. Estou animado para aproveitar minha bagagem de conhecimento diverso para criar soluções inovadoras e contribuir com novos projetos.
+            Especialista em Desenvolvimento Backend Java, com a missão de criar a espinha dorsal tecnológica que seu projeto necessita. Minha paixão por tecnologia, que começou na infância, hoje se traduz em um compromisso com a inovação e a excelência em cada linha de código.
+Seja para otimizar sistemas existentes ou construir algo do zero, estou pronto para aplicar minha vasta bagagem de conhecimento e garantir que seu projeto tenha a base sólida que ele merece.
         </p>
         </section>
 
