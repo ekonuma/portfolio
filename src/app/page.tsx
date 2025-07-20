@@ -21,33 +21,81 @@ export default function Home() {
           id="hero"
         >
           <h2 className="text-4xl font-bold mt-24 mb-6 text-center">
-  Olá, sou <span className="text-[#26A69A]">Eike</span>
-</h2>
+            Olá, sou <span className="text-[#26A69A]">Eike</span>
+          </h2>
 
-<p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto px-4 text-[#B2DFDB] text-center leading-relaxed">
-  Como Especialista em Backend Java, crio soluções tecnológicas escaláveis e robustas alinhadas às necessidades dos seus projetos.  
-</p>
+          <p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto px-4 text-[#B2DFDB] text-center leading-relaxed">
+            Como Especialista em Backend Java, crio soluções tecnológicas escaláveis e robustas alinhadas às necessidades dos seus projetos.
+          </p>
 
-<p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto px-4 text-[#B2DFDB] text-center leading-relaxed">
-  Tenho experiência com o ecossistema Java, microsserviços e Azure, desenvolvendo sistemas personalizados otimizando performance, custo e segurança.
-</p>
-<div className="mt-4">
+          <p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto px-4 text-[#B2DFDB] text-center leading-relaxed">
+            Tenho experiência com o ecossistema Java, microsserviços e Azure, desenvolvendo sistemas personalizados otimizando performance, custo e segurança.
+          </p>
+          <div className="mt-4">
 
-<p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto px-4 text-[#B2DFDB] text-center leading-relaxed font-semibold">
-  Quer transformar sua ideia em um backend de qualidade?
-</p>
+            <p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto px-4 text-[#B2DFDB] text-center leading-relaxed font-semibold">
+              Quer transformar sua ideia em um backend de qualidade?
+            </p>
 
-      <button
-          onClick={() => {
-              const section = document.querySelector('#contato');
-              section?.scrollIntoView({ behavior: 'smooth' });
-            }}
+            <button
+              onClick={() => {
+                const section = document.querySelector('#contato');
+                section?.scrollIntoView({ behavior: 'smooth' });
+              }}
 
               className="bg-[#26A69A] text-[#0A0F0F] font-semibold px-6 py-3 rounded hover:bg-[#1DE9B6] transition"
             >
               Mande sua mensagem!
             </button>
-</div>
+          </div>
+        </section>
+
+        <section id="servicos" className="mt-24 px-4 text-center">
+          <h2 className="text-4xl font-bold mb-8 text-[#26A69A]">Serviços</h2>
+
+          <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-[#B2DFDB] text-base sm:text-lg lg:text-xl">
+            <div className="bg-[#0A0F0F] p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="text-[#26A69A] font-semibold text-xl mb-2">Desenvolvimento Backend</h3>
+              <p>
+                Criação de APIs e sistemas escaláveis usando Java, Spring Boot e boas práticas de arquitetura.
+              </p>
+            </div>
+
+            <div className="bg-[#0A0F0F] p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="text-[#26A69A] font-semibold text-xl mb-2">Arquitetura de Microsserviços</h3>
+              <p>
+                Projetos distribuídos com foco em resiliência, integração entre serviços e deploy em ambientes cloud.
+              </p>
+            </div>
+
+            <div className="bg-[#0A0F0F] p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="text-[#26A69A] font-semibold text-xl mb-2">Integração com Azure</h3>
+              <p>
+                Soluções em nuvem utilizando recursos da Azure para garantir escalabilidade, segurança e automações.
+              </p>
+            </div>
+
+            <div className="bg-[#0A0F0F] p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="text-[#26A69A] font-semibold text-xl mb-2">Consultoria Técnica</h3>
+              <p>
+                Apoio estratégico em decisões de arquitetura, escolha de tecnologias e otimização de sistemas existentes.
+              </p>
+            </div>
+
+            <div className="bg-[#0A0F0F] p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="text-[#26A69A] font-semibold text-xl mb-2">Automação e DevOps</h3>
+              <p>
+                Pipelines de CI/CD, versionamento e automatização de processos para tornar sua operação mais eficiente.
+              </p>
+            </div>
+
+            <div className="bg-[#0A0F0F] p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="text-[#26A69A] font-semibold text-xl mb-2">Documentação Técnica</h3>
+              <p>
+                Produção de documentação clara e útil para seus sistemas, desde guias de uso até especificações técnicas.
+              </p>
+            </div>
+          </div>
         </section>
 
         <section className="container mx-auto py-16 px-4" id="projetos">
@@ -56,13 +104,13 @@ export default function Home() {
             <div className="bg-[#1E1E1E] p-6 rounded-xl shadow hover:scale-105 transition">
               <h4 className="text-xl font-semibold mb-2">Upgrade from Java 8 Spring 2 to Java 17 Spring 3</h4>
               <p className="text-[#B2DFDB] mb-4">
-               Atualização da implementação do Spring 2 para Spring 3 juntamente com a atualização do Java 8 para Java 17.
+                Atualização da implementação do Spring 2 para Spring 3 juntamente com a atualização do Java 8 para Java 17.
               </p>
             </div>
             <div className="bg-[#1E1E1E] p-6 rounded-xl shadow hover:scale-105 transition">
               <h4 className="text-xl font-semibold mb-2">OGZ</h4>
               <p className="text-[#B2DFDB] mb-4">
-               OGZ é um programa desktop especialmente criado para facilitar a organização do estoque de materiais utilizados pelo grupo Omega de robótica da Facens (Faculdade de Engenharia de Sorocaba).
+                OGZ é um programa desktop especialmente criado para facilitar a organização do estoque de materiais utilizados pelo grupo Omega de robótica da Facens (Faculdade de Engenharia de Sorocaba).
               </p>
               <div className="flex gap-4 text-sm">
                 <Link href="https://github.com/Omeganizer" className="text-[#26A69A] underline">
@@ -73,7 +121,7 @@ export default function Home() {
             <div className="bg-[#1E1E1E] p-6 rounded-xl shadow hover:scale-105 transition">
               <h4 className="text-xl font-semibold mb-2">Smartcash</h4>
               <p className="text-[#B2DFDB] mb-4">
-               Smartcash é um aplicativo de controle financeiro e e controle de vendas para Android.
+                Smartcash é um aplicativo de controle financeiro e e controle de vendas para Android.
               </p>
               <div className="flex gap-4 text-sm">
                 <Link href="https://github.com/JEAM-Team" className="text-[#26A69A] underline">
@@ -84,7 +132,7 @@ export default function Home() {
             <div className="bg-[#1E1E1E] p-6 rounded-xl shadow hover:scale-105 transition">
               <h4 className="text-xl font-semibold mb-2">ORP</h4>
               <p className="text-[#B2DFDB] mb-4">
-               ORP ou Organizador Rápido de Pedidos é um aplicativo Android que permite a rápida comunicação entre o pedido em um restaurante e seu processamento na cozinha.
+                ORP ou Organizador Rápido de Pedidos é um aplicativo Android que permite a rápida comunicação entre o pedido em um restaurante e seu processamento na cozinha.
               </p>
               <div className="flex gap-4 text-sm">
                 <Link href="https://github.com/ekonuma/ORP-Organizador-Rapido-de-Pedidos" className="text-[#26A69A] underline">
@@ -94,22 +142,22 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
+
         <section className="container mx-auto py-16 px-4" id="skills">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 px-18">
-          {[
-            'Java', 'Spring', 'Golang', 'Javascript', 'Typescript', 'React', 'NextJS',
-            'Azure', 'AWS', 'AzureDevOps', 'Github', 'Gitlab', 'Docker', 'Kubernetes',
-            'Linux', 'Shell', 'Android', 'Kotlin',
-          ].map((skill) => (
-            <span
-              key={skill}
-              className="bg-[#263230] text-[#E0F2F1] px-6 py-2 rounded-md text-sm font-medium w-full text-center whitespace-nowrap flex items-center justify-center min-h-[44px]"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 px-18">
+            {[
+              'Java', 'Spring', 'Golang', 'Javascript', 'Typescript', 'React', 'NextJS',
+              'Azure', 'AWS', 'AzureDevOps', 'Github', 'Gitlab', 'Docker', 'Kubernetes',
+              'Linux', 'Shell', 'Android', 'Kotlin',
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="bg-[#263230] text-[#E0F2F1] px-6 py-2 rounded-md text-sm font-medium w-full text-center whitespace-nowrap flex items-center justify-center min-h-[44px]"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
         </section>
         <section className="container mx-auto py-20 px-4" id="contato">
           <h3 className="text-3xl font-bold mb-12 text-[#26A69A]">Contato</h3>
