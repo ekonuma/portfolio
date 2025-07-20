@@ -1,3 +1,5 @@
+"use client";
+
 import ContatoForm from "@/components/ContactForm";
 import Head from "next/head";
 import Link from "next/link";
@@ -18,13 +20,34 @@ export default function Home() {
           className="flex flex-col justify-center items-center text-center h-screen"
           id="hero"
         >
-          <h2 className="text-4xl font-bold mb-4 mt-24">
-            Olá, sou <span className="text-[#26A69A]">Eike</span>
-          </h2>
-          <p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto px-4 text-[#B2DFDB] leading-relaxed text-center">
-            Especialista em Desenvolvimento Backend Java, com a missão de criar a espinha dorsal tecnológica que seu projeto necessita. Minha paixão por tecnologia, que começou na infância, hoje se traduz em um compromisso com a inovação e a excelência em cada linha de código.
-Seja para otimizar sistemas existentes ou construir algo do zero, estou pronto para aplicar minha vasta bagagem de conhecimento e garantir que seu projeto tenha a base sólida que ele merece.
-        </p>
+          <h2 className="text-4xl font-bold mt-24 mb-6 text-center">
+  Olá, sou <span className="text-[#26A69A]">Eike</span>
+</h2>
+
+<p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto px-4 text-[#B2DFDB] text-center leading-relaxed">
+  Como Especialista em Backend Java, crio soluções tecnológicas escaláveis e robustas alinhadas às necessidades dos seus projetos.  
+</p>
+
+<p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto px-4 text-[#B2DFDB] text-center leading-relaxed">
+  Tenho experiência com o ecossistema Java, microsserviços e Azure, desenvolvendo sistemas personalizados otimizando performance, custo e segurança.
+</p>
+<div className="mt-4">
+
+<p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto px-4 text-[#B2DFDB] text-center leading-relaxed font-semibold">
+  Quer transformar sua ideia em um backend de qualidade?
+</p>
+
+      <button
+          onClick={() => {
+              const section = document.querySelector('#contato');
+              section?.scrollIntoView({ behavior: 'smooth' });
+            }}
+
+              className="bg-[#26A69A] text-[#0A0F0F] font-semibold px-6 py-3 rounded hover:bg-[#1DE9B6] transition"
+            >
+              Mande sua mensagem!
+            </button>
+</div>
         </section>
 
         <section className="container mx-auto py-16 px-4" id="projetos">
@@ -71,7 +94,8 @@ Seja para otimizar sistemas existentes ou construir algo do zero, estou pronto p
             </div>
           </div>
         </section>
-
+        
+        <section className="container mx-auto py-16 px-4" id="skills">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 px-18">
           {[
             'Java', 'Spring', 'Golang', 'Javascript', 'Typescript', 'React', 'NextJS',
@@ -86,7 +110,7 @@ Seja para otimizar sistemas existentes ou construir algo do zero, estou pronto p
             </span>
           ))}
         </div>
-        
+        </section>
         <section className="container mx-auto py-20 px-4" id="contato">
           <h3 className="text-3xl font-bold mb-12 text-[#26A69A]">Contato</h3>
 

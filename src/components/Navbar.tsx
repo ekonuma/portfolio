@@ -1,16 +1,15 @@
 "use client";
 import Link from 'next/link';
-import { useState } from 'react'; // Import useState
+import { useState } from 'react';
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // State to manage mobile menu visibility
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="fixed top-0 w-full bg-[#1E1E1E]/80 backdrop-blur z-50 shadow-md">
       <nav className="container mx-auto flex justify-between items-center p-4">
         <Link href="/" className="text-xl font-bold">EKONUMA</Link>
 
-        {/* Hamburger menu button for mobile */}
         <button
           className="md:hidden flex items-center px-3 py-2 border rounded text-white border-white hover:text-[#1DE9B6] hover:border-[#1DE9B6]"
           onClick={() => setIsOpen(!isOpen)}
@@ -26,7 +25,6 @@ export default function Navbar() {
           </svg>
         </button>
 
-        {/* Desktop menu - hidden on mobile, visible on medium screens and up */}
         <ul className="hidden md:flex gap-4 text-sm">
           <li>
             <Link href="/blog" className="hover:text-[#1DE9B6]">Blog</Link>
@@ -45,7 +43,6 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Mobile menu - visible only when isOpen is true and on mobile screens */}
         {isOpen && (
           <div className="md:hidden absolute top-16 left-0 w-full bg-[#1E1E1E] shadow-lg">
             <ul className="flex flex-col items-center py-4 space-y-2 text-base">
