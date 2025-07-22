@@ -115,7 +115,7 @@ export default function ContatoForm() {
         {loading ? <LoadingSpinner /> :
           <button
             type="submit"
-            className="bg-[#26A69A] text-[#0A0F0F] font-semibold px-6 py-3 rounded hover:bg-[#1DE9B6] transition"
+            className="mt-4 bg-[#00796B] text-white font-semibold px-6 py-3 rounded hover:bg-[#009688] transition"
           >
             Enviar Mensagem
           </button>}
@@ -123,7 +123,7 @@ export default function ContatoForm() {
           href="https://wa.me/5515997929891?text=Olá%20Eike,%20quero%20transformar%20a%20minha%20ideia%20em%20um%20projeto%20incrível!"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#25D366] text-[#0A0F0F] font-semibold rounded hover:bg-[#4FE68C] transition"
+          className="inline-flex items-center justify-center gap-2 mt-4 px-6 py-3 bg-[#25D366] text-[#0A0F0F] font-semibold rounded hover:bg-[#4FE68C] transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -36,10 +36,10 @@ export default function Navbar() {
             <Link href="/#servicos" className="hover:text-[#1DE9B6]">Serviços</Link>
           </li>
           <li>
-            <Link href="/#projetos" className="hover:text-[#1DE9B6]">Projetos</Link>
+            <Link href="/#skills" className="hover:text-[#1DE9B6]">Tecnologias</Link>
           </li>
           <li>
-            <Link href="/#skills" className="hover:text-[#1DE9B6]">Skills</Link>
+            <Link href="/#projetos" className="hover:text-[#1DE9B6]">Projetos</Link>
           </li>
           <li>
             <Link href="/#contato" className="hover:text-[#1DE9B6]">Contato</Link>
