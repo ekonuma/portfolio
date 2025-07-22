@@ -41,31 +41,33 @@ export default async function Blog() {
                   <h2 className="text-xl font-semibold text-[#26A69A] mb-2">{title}</h2>
                   <p className="text-sm text-[#B2DFDB]">{new Date(date).toLocaleDateString('pt-BR')}</p>
 
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    {Array.isArray(post.properties.Tags.multi_select) &&
-                      post.properties.Tags.multi_select.map((tag) => (
-                        <span
-                          key={tag.id}
-                          className="bg-[#263230] text-[#E0F2F1] text-xs px-3 py-1 rounded-full"
-                        >
-                          {tag.name}
-                        </span>
-                      ))}
-                  </div>
+                  <Link href={`/blog/${slug}`} className="block">
 
-                  <Link
-                    href={`/blog/${slug}`}
-                    className="text-[#1DE9B6] hover:underline text-sm mt-4 inline-block"
-                  >
-                    Ler artigo →
-                  </Link>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {Array.isArray(post.properties.Tags.multi_select) &&
+                        post.properties.Tags.multi_select.map((tag) => (
+                          <span
+                            key={tag.id}
+                            className="bg-[#263230] text-[#E0F2F1] text-xs px-3 py-1 rounded-full"
+                          >
+                            {tag.name}
+                          </span>
+                        ))}
+                    </div>
+
+                    <span className="text-[#1DE9B6] hover:underline text-sm mt-4 inline-block">
+                      Ler artigo →
+                    </span>
+
+                </Link>
                 </div>
-              );
+
+        );
             }
-            return null;
+        return null;
           })}
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
+    </main >
   );
 }

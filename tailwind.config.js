@@ -15,6 +15,9 @@ module.exports = {
         accentHover: "#69F0AE",
         footer: "#A5D6A7",
       },
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+      },
     },
   },
   plugins: [],
